@@ -1,0 +1,40 @@
+{
+  "name": "docpad-plugin-imagin",
+  "version": "2.0.1",
+  "description": "Adds support for thumbnail generation to DocPad",
+  "author": "Almero Digital Marketing (http://almero.com)",
+  "keywords": [
+    "docpad",
+    "docpad-plugin",
+    "image",
+    "resize",
+    "thumbnail"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/almero-digital-marketing/docpad-plugin-imagin"
+  },
+  "engines": {
+    "node": ">=0.4",
+    "docpad": ">=6.66 <7"
+  },
+  "dependencies": {
+    "eachr": "^2.0.2",
+    "extendr": "^2.1.0",
+    "fs-extra": "^0.12.0",
+    "gm": "^1.17.0",
+    "taskgroup": "^4.0.5"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.4.0"
+  },
+  "main": "./out/imagin.plugin.js",
+  "scripts": {
+    "prepublish": "coffee -o out -c src"
+  },
+  "bugs": {
+    "url": "https://github.com/almero-digital-marketing/docpad-plugin-imagin/issues"
+  },
+  "homepage": "https://github.com/almero-digital-marketing/docpad-plugin-imagin",
+  "license": "ISC"
+}
