@@ -232,7 +232,7 @@ module.exports = (BasePlugin) ->
 					for t in targets
 						target_handler = config.targets[t]
 						img = target_handler(img, params)
-					img.write(dstPath, (err) ->
+					img.noProfile().write(dstPath, (err) ->
 						if err
 							docpad.log 'warn', "Failed to generate: #{dstPath}"
 							docpad.error(err)
