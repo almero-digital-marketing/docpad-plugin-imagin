@@ -83,7 +83,7 @@ Presets are basically aliases for a set of image parameters that you can define 
 
 ```
 plugins:
-	thumbnails:
+	imagin:
 		presets:
 			'default':
 				w: 200
