@@ -83,7 +83,7 @@ Presets are basically aliases for a set of image parameters that you can define 
 
 ```
 plugins:
-	thumbnails:
+	imagin:
 		presets:
 			'default':
 				w: 200
@@ -148,7 +148,7 @@ You can overide the *default* or *zoomcrop* targets if you wish, or specify comp
 
 ```
 plugins:
-	thumbnails:
+	imagin:
 		targets:
 			'sepia': (img, args) ->
 				return img.sepia()
@@ -186,7 +186,7 @@ Of course if this was a common occurence on your site, you would be much better 
 
 ```
 plugins:
-	thumbnails:
+	imagin:
 		targets:
 			'doitall': (img, args) ->
 				return img
@@ -204,7 +204,7 @@ You can assign a target name to `default` in the plugin configuration to make th
 
 ```
 plugins:
-	thumbnails:
+	imagin:
 		targets:
 			'default': 'zoomcrop'
 ```
@@ -223,6 +223,6 @@ To specify the use of ImageMagick, rather than GraphicsMagick, you need to add t
 
 ```
 plugins:
-	thumbnails:
+	imagin:
 		imageMagick: true
 ```

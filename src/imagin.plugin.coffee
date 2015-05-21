@@ -13,8 +13,6 @@ module.exports = (BasePlugin) ->
 		config:
 			presets:
 				'default':
-					w: 150
-					h: 150
 					q: 85
 				'tiny-square':
 					w: 50
